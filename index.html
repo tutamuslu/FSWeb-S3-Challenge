@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="tr">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sprint Challenge - Anasayfa</title>
-	<link rel="stylesheet" href="css/index.css">	
+	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
 </head>
@@ -14,44 +15,44 @@
 		<!-- header -->
 		<header>
 			<div id="header-area">
-				
+
 				<h1><a href="index.html">ERGİNEER BAR VE MANGAL</a></h1>
 				<!-- nav -->
-			<nav>
-				<a>Menü</a>
-				<a>Rezervasyonlar</a>
-				<a>Özel Teklifler</a>
-				<a>İletişim</a>
-			</nav>
-			<div id="sosyal">
-				<a href="#">
-					<i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
-				</a>
-				<a href="#">
-					<i class="fa-brands fa-square-twitter" style="color: #ffffff;"></i>	
-				</a>
-				<a href="#">
-					<i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
-				</a>
-			</div>
+				<nav>
+					<a href="menu.html">Menü</a>
+					<a>Rezervasyonlar</a>
+					<a>Özel Teklifler</a>
+					<a>İletişim</a>
+				</nav>
+				<div id="sosyal">
+					<a href="#">
+						<i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-square-twitter" style="color: #ffffff;"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
+					</a>
+				</div>
 
-		 </div>
-	   </header>
+			</div>
+		</header>
 
 		<!-- gallery section -->
 		<section class="gallery">
 			<div>
 				<h2>YEMEKLERİMİZ</h2>
 
-				<img src="img/food-avocadotoast.jpg" alt=""> 
-				<img src="img/food-burger.jpg" alt=""> 
-				<img src=" img/food-poutine.jpg" alt=""> 
-				<img src="img/food-ribs.jpg" alt=""> 
-				<img src="img/food-sandwich.jpg" alt=""> 
-				<img src="img/food-sausage.jpg" alt=""> 
-                <img src="img/food-steak.jpg" alt=""> 
-				<img src= "img/food-tacos.jpg"alt="">
-				<img src="img/food-wings.jpg"alt="">
+				<img src="img/food-avocadotoast.jpg" alt="">
+				<img src="img/food-burger.jpg" alt="">
+				<img src=" img/food-poutine.jpg" alt="">
+				<img src="img/food-ribs.jpg" alt="">
+				<img src="img/food-sandwich.jpg" alt="">
+				<img src="img/food-sausage.jpg" alt="">
+				<img src="img/food-steak.jpg" alt="">
+				<img src="img/food-tacos.jpg" alt="">
+				<img src="img/food-wings.jpg" alt="">
 			</div>
 		</section>
 
@@ -63,8 +64,7 @@
 			<div class="about-container">
 				<h2>HAKKIMIZDA</h2>
 
-				<div id="cooks" class="pic">
-				</div>
+				<div id="cooks" class="pic"></div>
 
 				<div class="text">
 					<h3>Güzel Yemekler, Güzel İnsanlar</h3>
@@ -115,8 +115,8 @@
 						<h3>İletişim</h3>
 
 						<div>
-							<a id="phone" href="tel:999-999-9999">999-999-9999</a>
-							<a id="email" href="mailto:restoran@boomer.com">restoran@ergineer.com</a>
+							<p><a id="phone" href="tel:999-999-9999">999-999-9999</a></p>
+							<p><a id="email" href="mailto:restoran@boomer.com">restoran@ergineer.com</a></p>
 						</div>
 					</div>
 				</div>
@@ -129,15 +129,23 @@
 		<!-- footer -->
 		<footer>
 			<!-- email signup -->
-			Mail listemize katılın!
-			Üye Ol
+			<div id="signup">
+				<h5>Mail listemize katılın!</h5>
+				<input type="text" placeholder="E-posta Adresi">
+				<button>Üye ol</button>
+			</div>
 			<!-- nav -->
-			Menü
-			Rezervasyonlar
-			Özel Teklifler
-			İletişim
-			<!-- copyright -->
-			©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+			<div id="nav-copy">
+				<nav>
+					<a href="menu.html">Menü</a>
+					<a href="#">Rezervasyonlar</a>
+					<a href="#">Özel Teklifler</a>
+					<a href="#">İletişim</a>
+				</nav>
+				<!-- copyright -->
+				<div id="copyright">©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>
