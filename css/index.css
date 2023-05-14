@@ -270,6 +270,7 @@ header nav a {
     width: 100%;
     margin-top: 8%;
     font-size: 4rem;
+    font-weight: bold;
 }
 
 .about-container .text {
@@ -396,11 +397,43 @@ footer #copyright {
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    header #header-area h1 a{
+        font-size: 3rem;
+        width: 66%;
+        margin: 0 auto; 
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    header nav a {
+        text-align: center;
+        padding: 0;
+        margin: 1%;
+    }
+
+    header #header-area {
+        height: 36vh;
+    }
 
     /* gallery section */
     .gallery {
+        width: 100%;
         height: auto;
+    }
+
+    .gallery img{
+        width: 100%;
+        margin-bottom: 5%;
     }
 
     /* about us section */
@@ -412,15 +445,30 @@ footer #copyright {
     .about h2 {
         width: 100%;
         padding-top: 5vh;
+        font-size: 6.3rem;
+        padding-left: 3%;
     }
 
     .about-container .text {
         width: 85%;
     }
 
+    .about-container .text h3{
+        font-size: 4.5rem;
+    }
+    
+    .about-container .text p{
+        font-size: 3.5rem;
+    }
+
     /* contact us section */
+    .contact h2{
+        font-size: 6.7rem;
+    }
+
     .contact h3 {
         padding-top: 2.5vh;
+        font-size: 5rem;
     }
 
     .info {
@@ -446,6 +494,46 @@ footer #copyright {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        display: flex;
+        flex-direction: column;
     }
 
+    footer #signup{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+
+    footer #signup input{
+        width: 100%;
+    }
+
+    footer #signup button{
+        width: 100%;
+    }
+
+    footer #nav-copy{
+        width: 100%;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    footer nav a {
+        text-align: center;
+        padding: 0;
+        margin: 1%;
+    }
+
+    footer #copyright{
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 2%;
+    }
 }
