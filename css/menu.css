@@ -244,48 +244,48 @@ header nav a {
     flex-direction: row;
 }
 
-.menu #menu-bg{
+.menu #menu-bg {
     background-color: rgb(0, 4, 17, .8);
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.menu h2{
+.menu h2 {
     text-align: center;
     display: flex;
     justify-content: space-around;
 }
 
-.menu #menu-item-container{
+.menu #menu-item-container {
     display: flex;
     flex-wrap: wrap;
-    margin:0 auto;
+    margin: 0 auto;
     width: 95%;
 }
 
-.menu .menu-item{
+.menu .menu-item {
     width: 50%;
     display: flex;
     flex-direction: column;
     padding: 3% 5%;
 }
 
-.menu .menu-item h3{
+.menu .menu-item h3 {
     font-size: 3.3rem;
 }
 
-.menu .menu-item .menu-row{
+.menu .menu-item .menu-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.menu .menu-item .menu-row h4{
+.menu .menu-item .menu-row h4 {
     font-size: 3rem;
 }
 
-.menu .menu-item .menu-row .price{
+.menu .menu-item .menu-row .price {
     font-size: 3rem;
 }
 
@@ -294,7 +294,7 @@ header nav a {
     padding-bottom: 3%;
 }
 
-.menu #deserts{
+.menu #deserts {
     margin: 0 auto;
 }
 
@@ -326,7 +326,7 @@ footer #signup button {
     height: 5vh;
     padding: 0;
     text-align: center;
-    color:black;
+    color: black;
 }
 
 footer #nav-copy {
@@ -391,8 +391,74 @@ footer #copyright {
     /* menu */
     .menu {
         background-image: none;
+        width: 100%;
+        height: auto;
+        color:black;
+        background-color: rgb(225, 239, 230);
+        display: block;
+        text-align: center;
+    
     }
 
+    .menu #menu-bg {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .menu-item {
+        color:black
+    }
+
+    .menu .menu-item h3 {
+        font-size: 3.3rem;
+        text-align: center;
+        border-radius: 25%;
+        color: black;
+        margin: 0 10% 10% 10%;
+    }
+
+    .menu #menu-bg h2 {
+        background-color: white;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: rgb(0, 0, 0);
+        border-bottom: 25px solid #000;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+
+    .menu #menu-bg #menu-item-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu #menu-bg #menu-item-container .menu-item{
+        width: 100%;
+    }
+
+    #menu-item-container .menu-item h3{
+        border: 2px solid #000;
+        border-radius: 0;
+    }
+
+    .menu .menu-item .menu-row {
+        flex-direction: column;
+    }
+
+    .menu-item .menu-row h4,
+    .menu-item .menu-row .price,
+    .menu-item div p{
+        color: black;
+    }
+
+    .menu-item div p{
+        border-bottom: 4px solid #000;
+    }
     /* footer section */
     footer {
         height: auto;
